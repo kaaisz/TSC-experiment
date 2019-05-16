@@ -1,5 +1,9 @@
-function say(message: string) {
-  console.log(message);
-}
+import { Bear } from './bear.model';
 
-say('Hello TypeScript!');
+// create instance of bear, which is having 3 claws
+const bear = new Bear(3)
+
+// if the bear is the instanceof Bear
+if(bear instanceof Bear) {
+  console.log("Hello from Typescript world!!");
+}
